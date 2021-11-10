@@ -1,18 +1,49 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <section class="home">
+    <div class="banner__container">
+      <Banner />
+    </div>
+    <About />
+  </section>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Banner from "@/components/home/Banner";
+import About from "@/components/home/About";
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
-    HelloWorld
+    Banner,
+    About,
+  },
+};
+</script>
+<style>
+.home {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.banner__container {
+  width: 100%;
+  height: 100vh;
+  background: url(../assets/images/bgBanner.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-height: 35.625em) {
+  .banner__container {
+    height: 125vh;
   }
 }
-</script>
+
+@media screen and (min-height: 43.75em) {
+  .banner__container {
+    height: 88vh;
+  }
+}
+</style>

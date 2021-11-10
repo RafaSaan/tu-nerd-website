@@ -1,30 +1,62 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+  <Loader v-if="isComplete" />
+  <Navbar />
+  <Home />
+  <Solutions />
+  <Services />
+  <SuccessStories />
+  <News />
+  <Contact />
 </template>
+<script>
+import { ref } from "@vue/reactivity";
+import Loader from "@/views/Loader";
+import Navbar from "@/components/navbar/Navbar";
+import Home from "@/views/Home";
+import Solutions from "@/views/Solutions";
+import Services from "@/views/Services";
+import SuccessStories from "@/views/SuccessStories";
+import News from "@/views/News";
+import Contact from "@/views/Contact";
+
+export default {
+  components: {
+    Navbar,
+    Loader,
+    Home,
+    Solutions,
+    Services,
+    SuccessStories,
+    News,
+    Contact,
+  },
+  setup() {
+    const isComplete = ref(true);
+    const loadComplete = () => (isComplete.value = false);
+    setTimeout(() => {
+      loadComplete();
+    }, 1000);
+
+    return {
+      isComplete,
+    };
+  },
+};
+</script>
 
 <style>
+* {
+  box-sizing: border-box;
+  font-family: "Maven Pro", sans-serif;
+  /* font-size: 62.5%; */
+  margin: 0;
+  padding: 0;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
 }
 </style>

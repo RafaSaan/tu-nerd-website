@@ -35,7 +35,7 @@ export default {
     const loadComplete = () => (isComplete.value = false);
     setTimeout(() => {
       loadComplete();
-    }, 1000);
+    }, 5000);
 
     return {
       isComplete,
@@ -51,12 +51,20 @@ export default {
   /* font-size: 62.5%; */
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 #app {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
+  align-items: center;
+  max-width: 85.25rem;
+}
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 </style>

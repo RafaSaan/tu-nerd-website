@@ -23,7 +23,13 @@
       <img src="../../assets/images/LogoTuTech.svg" alt="logo-tuTech" />
     </div>
 
-    <button class="tu-control__cta">Ver Más</button>
+    <a
+      class="tu-control__cta"
+      href="https://tc.tunerd.mx/"
+      rel="noopener noreferrer"
+      target="_blank"
+      >Ver Más</a
+    >
   </div>
 </template>
 
@@ -73,8 +79,14 @@ export default {};
   background: var(--blue);
   color: #fff;
   margin: 3rem 0;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
 }
 @media screen and (min-width: 31em) {
+  .logo-tu-control {
+    width: 26rem;
+  }
   .tu-control__logos {
     justify-content: center;
   }

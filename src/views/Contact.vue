@@ -36,7 +36,7 @@ export default {
 @media screen and (min-width: 50em) {
   .contact__container {
     flex-wrap: nowrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
   .contact__info {
     width: 45%;

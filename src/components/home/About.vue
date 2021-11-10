@@ -63,7 +63,7 @@ export default {};
   place-items: center;
 }
 .aboutUs__card {
-  width: 17.5rem;
+  width: 16rem;
   height: 19rem;
   display: flex;
   flex-direction: column;

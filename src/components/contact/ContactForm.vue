@@ -1,5 +1,5 @@
 <template>
-  <div class="contact__form">
+  <div class="contact__form" id="contact">
     <h2>Envia tu mensaje</h2>
     <form class="form">
       <input type="text" placeholder="Nombre Completo" />
@@ -35,9 +35,9 @@ form {
 }
 .form > input,
 textarea {
-  width: 17rem;
+  width: 16rem;
   height: 3.75rem;
-  min-width: 17.5rem;
+  /* min-width: 16rem; */
   margin: 0.5rem 0 !important;
 }
 input:focus,

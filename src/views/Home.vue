@@ -1,5 +1,5 @@
 <template>
-  <section class="home">
+  <section class="home" id="home">
     <div class="banner__container">
       <Banner />
     </div>
@@ -22,9 +22,11 @@ export default {
 <style>
 .home {
   width: 100%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 3.75rem;
 }
 .banner__container {
   width: 100%;
@@ -45,5 +47,7 @@ export default {
   .banner__container {
     height: 88vh;
   }
+}
+@media screen and (min-width: 85.625rem) {
 }
 </style>

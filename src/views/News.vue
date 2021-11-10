@@ -1,8 +1,8 @@
 <template>
-  <section class="news">
+  <section class="news" id="news">
     <h2 class="news__title">Noticias</h2>
     <div class="news__container">
-      <div class="news__item">
+      <article class="news__item">
         <div class="news__image">
           <img src="../assets/images/noticia1.png" alt="" />
         </div>
@@ -15,8 +15,8 @@
             Ver Más <uil-angleRightB class="view-arrow" />
           </div>
         </div>
-      </div>
-      <div class="news__item">
+      </article>
+      <article class="news__item">
         <div class="news__image">
           <img src="../assets/images/noticia2.png" alt="noticia" />
         </div>
@@ -26,8 +26,8 @@
             Ver Más <uil-angleRightB class="view-arrow" />
           </div>
         </div>
-      </div>
-      <div class="news__item">
+      </article>
+      <article class="news__item">
         <div class="news__image">
           <img src="../assets/images/noticia3.png" alt="" />
         </div>
@@ -40,7 +40,7 @@
             Ver Más <uil-angleRightB class="view-arrow" />
           </div>
         </div>
-      </div>
+      </article>
     </div>
   </section>
 </template>

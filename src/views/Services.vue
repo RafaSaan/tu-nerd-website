@@ -1,5 +1,5 @@
 <template>
-  <div class="services">
+  <main class="services" id="services">
     <div class="services__info__container">
       <img
         src="../assets/images/ServiciosImg.png"
@@ -9,7 +9,7 @@
       <ServicesInfo />
     </div>
     <ServicesTuControl />
-  </div>
+  </main>
 </template>
 
 <script>

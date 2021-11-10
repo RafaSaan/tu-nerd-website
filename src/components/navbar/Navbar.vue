@@ -1,7 +1,7 @@
 <template>
   <header>
     <nav class="navbar">
-      <a href="#" class="logo"
+      <a href="#home" class="logo"
         ><img src="../../assets/images/logoTuNerd.jpg" alt="logo-tu-nerd"
       /></a>
       <NavMenu :class="{ 'menu-active': isOpen }" />
@@ -40,6 +40,10 @@ header {
   background: #fff;
   display: flex;
   justify-content: center;
+  max-width: 85.25rem;
+  position: fixed;
+  top: 0;
+  z-index: 11;
 }
 .navbar {
   width: 80%;

@@ -17,7 +17,7 @@ export default {};
   display: grid;
   height: 100vh;
   place-items: center;
-  position: absolute;
+  position: sticky;
   top: 0;
   width: 100%;
   z-index: 99;

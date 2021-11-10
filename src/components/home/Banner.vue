@@ -21,6 +21,8 @@
 <style scoped>
 .banner {
   width: 80%;
+  max-width: 68.75rem;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;

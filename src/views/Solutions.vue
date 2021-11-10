@@ -1,5 +1,5 @@
 <template>
-  <section class="solutions">
+  <section class="solutions" id="solutions">
     <SolutionsInfo />
     <SolutionsCards />
   </section>
@@ -23,6 +23,7 @@ export default {
   align-items: center;
   flex-direction: column;
   width: 100%;
+
   margin-top: 2rem;
   background: var(--bg-primary);
 }

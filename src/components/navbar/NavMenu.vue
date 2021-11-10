@@ -1,19 +1,19 @@
 <template>
   <ul class="nav__menu">
     <li class="nav__item">
-      <a href="#">Nosotros</a>
+      <a href="#home" class="nav__link">Nosotros</a>
     </li>
     <li class="nav__item">
-      <a href="#">Soluciones</a>
+      <a href="#solutions" class="nav__link">Soluciones</a>
     </li>
     <li class="nav__item">
-      <a href="#">Servicios</a>
+      <a href="#services" class="nav__link">Servicios</a>
     </li>
     <li class="nav__item">
-      <a href="#">Noticias</a>
+      <a href="#news" class="nav__link">Noticias</a>
     </li>
     <li class="nav__item">
-      <div class="cta">Contacto</div>
+      <a href="#news" class="cta">Contacto</a>
     </li>
   </ul>
 </template>
@@ -39,7 +39,7 @@ export default {};
 .nav__item {
   margin: 1.8rem 0;
 }
-.nav__item > a {
+.nav__link {
   color: #000;
   padding: 1rem;
   text-decoration: none;
@@ -48,12 +48,11 @@ export default {};
   background: #0079ff;
   border-radius: 0.62rem;
   color: #fff;
-  cursor: pointer;
   display: grid;
-  font-size: 0.89rem;
   height: 2.18rem;
   place-items: center;
   width: 7.75rem;
+  text-decoration: none;
 }
 @media screen and (min-width: 46.875em) {
   .nav__menu {
@@ -65,6 +64,8 @@ export default {};
     top: 0;
     width: auto;
   }
+  .nav__link {
+    padding: 1rem 1.5rem;
+  }
 }
-/* @media screen and (max-width: 750px)  */
 </style>

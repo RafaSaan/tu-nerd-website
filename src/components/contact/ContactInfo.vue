@@ -21,10 +21,10 @@
         <uil-phone class="icon-contact" />
         <p>55 7577 1644</p>
       </a>
-      <div class="redes__item">
+      <a class="redes__item">
         <uil-instagram class="icon-contact" />
         <p>Tu Nerd</p>
-      </div>
+      </a>
     </div>
   </div>
 </template>
@@ -69,6 +69,7 @@ export default {
 .icon-contact {
   font-size: 1.875rem;
 }
+
 .redes__item > p {
   font-size: var(--step--1);
   padding-left: 1rem;

@@ -31,11 +31,13 @@ export default {};
   flex-direction: column;
   list-style: none;
   position: absolute;
+  transition: all 0.4s ease;
   right: 0;
-  top: 3.75rem;
+  top: -18.75rem;
   width: 13rem;
   z-index: 1;
 }
+
 .nav__item {
   margin: 1.8rem 0;
 }
@@ -63,6 +65,7 @@ export default {};
     position: relative;
     top: 0;
     width: auto;
+    transform: scale(1);
   }
   .nav__link {
     padding: 1rem 1.5rem;

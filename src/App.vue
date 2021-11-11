@@ -7,7 +7,7 @@
   <SuccessStories />
   <News />
   <Contact />
-  <Footer />
+  <FooterTN />
 </template>
 <script>
 import { ref } from "@vue/reactivity";
@@ -19,7 +19,7 @@ import Services from "@/views/Services";
 import SuccessStories from "@/views/SuccessStories";
 import News from "@/views/News";
 import Contact from "@/views/Contact";
-import Footer from "@/views/Footer";
+import FooterTN from "@/views/FooterTN";
 
 export default {
   components: {
@@ -31,7 +31,7 @@ export default {
     SuccessStories,
     News,
     Contact,
-    Footer,
+    FooterTN,
   },
   setup() {
     const isComplete = ref(true);

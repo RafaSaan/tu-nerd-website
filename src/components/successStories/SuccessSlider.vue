@@ -227,4 +227,18 @@ export default {
   width: 23px;
   height: 45px;
 }
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  content: "prev";
+  font-family: swiper-icons;
+  font-size: var(--swiper-navigation-size);
+  text-transform: none !important;
+  letter-spacing: 0;
+  text-transform: none;
+  font-variant: initial;
+  line-height: 1;
+}
+.swiper-button-next:after {
+  content: "next";
+}
 </style>

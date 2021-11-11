@@ -35,7 +35,7 @@
 <script>
 import ContactRedes from "@/components/footer/ContactRedes";
 export default {
-  name: "footer",
+  name: "footerTN",
   components: {
     ContactRedes,
   },

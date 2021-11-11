@@ -1,56 +1,12 @@
 <template>
   <article class="modal__container">
-    <div class="modal">
-      <div class="modal__close" @click="closeModal">
-        <uil-multiply class="icon-close" />
-      </div>
-      <div class="modal__content">
-        <div class="modal__image">
-          <img :src="srcImage" alt="logo" />
-        </div>
-        <div class="modal__info">
-          <h3>{{ title }}</h3>
-          <br />
-          <p>
-            {{ info }}
-          </p>
-          <br />
-          <p>
-            {{ info }}
-          </p>
-          <br />
-          <p>
-            {{ info }}
-          </p>
-        </div>
-      </div>
-    </div>
+    <slot />
   </article>
 </template>
 
 <script>
-import { UilMultiply } from "@iconscout/vue-unicons";
 export default {
-  props: {
-    closeModal: {
-      type: Function,
-    },
-    srcImage: {
-      type: String,
-    },
-    title: {
-      type: String,
-      required: true,
-    },
-    info: {
-      type: String,
-      required: true,
-    },
-  },
   name: "modal",
-  components: {
-    UilMultiply,
-  },
 };
 </script>
 
@@ -63,6 +19,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 100;
 }
 .modal {
   max-width: 50rem;

@@ -2,6 +2,9 @@
   <Swiper
     class="successSlider mySwiper"
     :slidesPerView="1"
+    :pagination="{
+      clickable: true,
+    }"
     :navigation="true"
     :loop="true"
     :loopFillGroupWithBlank="true"
@@ -171,13 +174,15 @@ import { Swiper, SwiperSlide } from "swiper/vue";
 
 // Import Swiper styles
 import "swiper/swiper.min.css";
+import "swiper/swiper-bundle.min.css";
 import "swiper/components/navigation/navigation.min.css";
+import "swiper/components/pagination/pagination.min.css";
 
 // import Swiper core and required modules
-import SwiperCore, { Navigation } from "swiper";
+import SwiperCore, { Navigation, Pagination } from "swiper";
 
 // install Swiper modules
-SwiperCore.use([Navigation]);
+SwiperCore.use([Navigation, Pagination]);
 
 export default {
   name: "successSlider",
@@ -226,19 +231,5 @@ export default {
   color: var(--blue);
   width: 23px;
   height: 45px;
-}
-.swiper-button-next:after,
-.swiper-button-prev:after {
-  content: "prev";
-  font-family: swiper-icons;
-  font-size: var(--swiper-navigation-size);
-  text-transform: none !important;
-  letter-spacing: 0;
-  text-transform: none;
-  font-variant: initial;
-  line-height: 1;
-}
-.swiper-button-next:after {
-  content: "next";
 }
 </style>

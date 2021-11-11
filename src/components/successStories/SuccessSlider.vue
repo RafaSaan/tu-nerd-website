@@ -221,4 +221,10 @@ export default {
   display: flex;
   justify-content: center;
 }
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--blue);
+  width: 23px;
+  height: 45px;
+}
 </style>

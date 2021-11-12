@@ -13,7 +13,7 @@
       <a href="#news" class="nav__link">Noticias</a>
     </li>
     <li class="nav__item">
-      <a href="#news" class="cta">Contacto</a>
+      <a href="#contact" class="cta">Contacto</a>
     </li>
   </ul>
 </template>
@@ -31,9 +31,10 @@ export default {};
   flex-direction: column;
   list-style: none;
   position: absolute;
-  transition: all 0.4s ease;
+  transition: all 0.8s ease;
   right: 0;
-  top: -18.75rem;
+  top: 3.75rem;
+
   width: 13rem;
   z-index: 1;
 }
@@ -56,6 +57,7 @@ export default {};
   width: 7.75rem;
   text-decoration: none;
 }
+
 @media screen and (min-width: 46.875em) {
   .nav__menu {
     display: flex;

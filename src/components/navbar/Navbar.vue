@@ -5,8 +5,9 @@
         ><img src="../../assets/images/logoTuNerd.jpg" alt="logo-tu-nerd"
       /></a>
       <transition name="mobile-nav">
-        <NavMenu :class="{ 'menu-active': isOpen }" />
+        <NavMenu :class="{ 'menu-active': isOpen }" v-if="isOpen" />
       </transition>
+
       <uil-bars
         class="burger burger-none"
         @click="menuOpen"
@@ -27,7 +28,13 @@ export default {
     UilBars,
   },
   setup() {
-    let isOpen = ref(false);
+    let isOpen = ref(true);
+
+    const windowWhidth = window.innerWidth;
+    if (windowWhidth < 750) {
+      isOpen.value = false;
+    }
+
     const menuOpen = () => {
       isOpen.value = !isOpen.value;
     };
@@ -70,9 +77,17 @@ header {
 }
 .menu-active {
   display: flex;
-  /* transform: scale(1); */
-  transition: all 5s ease-in-out;
-  top: 3.75rem;
+}
+.mobile-nav-enter-active,
+.mobile-nav-leave-active {
+  transition: all 0.8s ease;
+}
+.mobile-nav-enter-from,
+.mobile-nav-leave-to {
+  transform: translateX(220px);
+}
+.mobile-nav-enter-to {
+  transform: translateX(0px);
 }
 
 @media screen and (min-width: 46.875em) {

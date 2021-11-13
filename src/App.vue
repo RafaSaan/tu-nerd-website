@@ -1,5 +1,5 @@
 <template>
-  <Loader v-if="isComplete" />
+  <!-- <Loader v-if="isComplete" />
   <Navbar />
   <Home />
   <Solutions />
@@ -7,43 +7,43 @@
   <SuccessStories />
   <News />
   <Contact />
-  <FooterTN />
+  <FooterTN /> -->
+  <router-view />
 </template>
 <script>
-import { ref } from "@vue/reactivity";
-import Loader from "@/views/Loader";
-import Navbar from "@/components/navbar/Navbar";
-import Home from "@/views/Home";
-import Solutions from "@/views/Solutions";
-import Services from "@/views/Services";
-import SuccessStories from "@/views/SuccessStories";
-import News from "@/views/News";
-import Contact from "@/views/Contact";
-import FooterTN from "@/views/FooterTN";
+// import { ref } from "@vue/reactivity";
+// import Loader from "@/views/Loader";
+// import Navbar from "@/components/navbar/Navbar";
+// import Home from "@/views/Home";
+// import Solutions from "@/views/Solutions";
+// import Services from "@/views/Services";
+// import SuccessStories from "@/views/SuccessStories";
+// import News from "@/views/News";
+// import Contact from "@/views/Contact";
+// import FooterTN from "@/views/FooterTN";
 
 export default {
-  components: {
-    Navbar,
-    Loader,
-    Home,
-    Solutions,
-    Services,
-    SuccessStories,
-    News,
-    Contact,
-    FooterTN,
-  },
-  setup() {
-    const isComplete = ref(true);
-    const loadComplete = () => (isComplete.value = false);
-    setTimeout(() => {
-      loadComplete();
-    }, 5000);
-
-    return {
-      isComplete,
-    };
-  },
+  // components: {
+  //   Navbar,
+  //   Loader,
+  //   Home,
+  //   Solutions,
+  //   Services,
+  //   SuccessStories,
+  //   News,
+  //   Contact,
+  //   FooterTN,
+  // },
+  // setup() {
+  //   const isComplete = ref(true);
+  //   const loadComplete = () => (isComplete.value = false);
+  //   setTimeout(() => {
+  //     loadComplete();
+  //   }, 5000);
+  //   return {
+  //     isComplete,
+  //   };
+  // },
 };
 </script>
 
@@ -57,11 +57,7 @@ export default {
   scroll-behavior: smooth;
 }
 #app {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   width: 100%;
-  align-items: center;
   max-width: 85.25rem;
 }
 body {

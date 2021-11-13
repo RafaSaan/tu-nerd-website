@@ -1,5 +1,5 @@
 <template>
-  <div class="contact__form" id="contact">
+  <div class="contact__form">
     <h2>Envia tu mensaje</h2>
     <form class="form">
       <input type="text" placeholder="Nombre Completo" />

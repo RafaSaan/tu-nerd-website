@@ -1,19 +1,19 @@
 <template>
   <ul class="nav__menu">
     <li class="nav__item">
-      <a href="#home" class="nav__link">Nosotros</a>
+      <router-link to="/#home" class="nav__link">Nosotros</router-link>
     </li>
     <li class="nav__item">
-      <a href="#solutions" class="nav__link">Soluciones</a>
+      <router-link to="/#solutions" class="nav__link">Soluciones</router-link>
     </li>
     <li class="nav__item">
-      <a href="#services" class="nav__link">Servicios</a>
+      <router-link to="/#services" class="nav__link">Servicios</router-link>
     </li>
     <li class="nav__item">
-      <a href="#news" class="nav__link">Noticias</a>
+      <router-link to="/#news" class="nav__link">Noticias</router-link>
     </li>
     <li class="nav__item">
-      <a href="#contact" class="cta">Contacto</a>
+      <router-link to="/#contact" class="cta">Contacto</router-link>
     </li>
   </ul>
 </template>

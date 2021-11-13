@@ -1,5 +1,5 @@
 <template>
-  <section class="home" id="home">
+  <section id="home" class="home">
     <div class="banner__container">
       <Banner />
     </div>

@@ -37,7 +37,7 @@
 h3,
 p {
   color: #fff;
-  padding-bottom: 1.875rem;
+  padding-bottom: 1.5rem;
 }
 .banner__info > h2 {
   font-size: var(--step-3);

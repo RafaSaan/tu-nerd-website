@@ -27,7 +27,9 @@
     </div>
     <div class="footer__terms">
       <span>© 2021, Tu Nerd S. de R.L. De C.V. |</span>
-      <a> Términos y condiciones.</a>
+      <router-link to="/terminos-y-condiciones">
+        Términos y condiciones.</router-link
+      >
     </div>
   </footer>
 </template>

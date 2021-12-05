@@ -1,12 +1,12 @@
 import { createRouter, createWebHashHistory } from "vue-router";
-import MainPage from "@/pages/MainPage";
+// import MainPage from "@/pages/MainPage";
 import PageNotFound from "../pages/PageNotFound";
 
 const routes = [
   {
     path: "/",
-    name: "mainPage",
-    component: MainPage,
+    name: "main",
+    component: () => import("../modules/website/layouts/WebsiteLayout.vue"),
   },
   {
     path: "/:pathMatch(.*)*",

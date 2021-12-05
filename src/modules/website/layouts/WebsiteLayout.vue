@@ -1,5 +1,6 @@
 <template>
   <div class="tunerd">
+    <Loader v-if="isComplete" />
     <Navbar />
     <Home />
     <SuccessSlider />
@@ -12,6 +13,7 @@
 </template>
 
 <script>
+import Loader from "../components/Loader";
 import Navbar from "../components/navbar/Navbar";
 import Home from "../components/home/Home";
 import SuccessSlider from "../components/successStories/SuccessSlider";
@@ -20,12 +22,13 @@ import TuControl from "../components/tuControl/TuControl";
 import Services from "../components/services/Services";
 import Contact from "../components/contact/Contact";
 import Footer from "../components/footer/Footer";
+import { ref } from "vue";
 
 export default {
   name: "websiteLayout",
   components: {
+    Loader,
     Navbar,
-    // Loader,
     Home,
     SuccessSlider,
     AboutUs,
@@ -33,24 +36,17 @@ export default {
     Services,
     Contact,
     Footer,
-    // Solutions,
-    // Services,
-    // SuccessStories,
-    // News,
-    // Contact,
-    // FooterTN,
   },
-  //   setup() {
-  //     const isComplete = ref(true);
-  //     const loadComplete = () => (isComplete.value = false);
-  //     setTimeout(() => {
-  //       loadComplete();
-  //     }, 5000);
+  setup() {
+    const isComplete = ref(true);
+    setTimeout(() => {
+      isComplete.value = false;
+    }, 5000);
 
-  //     return {
-  //       isComplete,
-  //     };
-  //   },
+    return {
+      isComplete,
+    };
+  },
 };
 </script>
 

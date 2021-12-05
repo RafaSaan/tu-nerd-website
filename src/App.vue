@@ -48,6 +48,8 @@ export default {
 </script>
 
 <style>
+/* @import url("https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700&display=swap");
 * {
   box-sizing: border-box;
   font-family: "Maven Pro", sans-serif;

@@ -1,5 +1,6 @@
 <template>
   <section class="services">
+    <h2>Nosotros hacemos el cambio con nuestros <span> servicios </span></h2>
     <img
       src="../../../../assets/images/servicios-ilustracion.png"
       alt="ilustracion servicios"
@@ -73,6 +74,16 @@ export default {
   position: relative;
   min-height: 40rem;
   overflow: hidden;
+  flex-direction: column;
+}
+.services > h2,
+span {
+  font-size: var(--step-1);
+  padding: 4rem 0 1rem 0;
+  text-align: center;
+}
+.services > h2 > span {
+  color: var(--blue);
 }
 .services > img {
   position: absolute;
@@ -84,12 +95,13 @@ export default {
   width: 15rem;
 }
 .services__container {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   /* grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); */
   align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   justify-items: center;
+  min-height: 40rem;
+  width: 100%;
 }
 .services__item {
   max-width: 35.8125rem;
@@ -97,16 +109,17 @@ export default {
   flex-direction: column;
   align-items: center;
   min-height: 11.25rem;
+  margin: 1.5rem 0;
 }
 .services-icon {
-  font-size: 3.9rem;
   color: var(--blue);
+  font-size: 3.9rem;
 }
 .services__info {
-  max-width: 32.1rem;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  max-width: 32.1rem;
 }
 .services__info > h3 {
   font-size: var(--step-0);

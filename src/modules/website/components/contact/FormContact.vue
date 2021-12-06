@@ -38,10 +38,9 @@ form {
 }
 .form > input,
 textarea {
-  width: 16rem;
   height: 3.75rem;
-  /* min-width: 16rem; */
   margin: 0.5rem 0 !important;
+  width: 18rem;
 }
 input:focus,
 textarea:focus {
@@ -52,12 +51,19 @@ textarea {
   height: 8.5rem;
 }
 .form__btn {
-  width: 200px;
-  height: 50px;
   background: var(--blue);
-  border-radius: 10px;
+  border-radius: 5px;
   border: none;
-  margin: 1rem auto;
   color: #fff;
+  cursor: pointer;
+  height: 50px;
+  margin: 1rem auto;
+  width: 200px;
+}
+@media screen and (min-width: 26em) {
+  .form > input,
+  textarea {
+    width: 24rem;
+  }
 }
 </style>

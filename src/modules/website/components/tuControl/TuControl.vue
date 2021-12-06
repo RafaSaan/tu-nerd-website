@@ -8,9 +8,12 @@
       <div class="tuControl__info">
         <img src="../../../../assets/images/LogoTuControl.png" alt="" />
         <p>
-          Implementa soluciones de Internet de las Cosas (IoT) y analítica en
-          empresas para incrementar la eficiencia de las máquinas, personas y
-          procesos a través de herramientas de tecnologías de información.
+          Soluciones integrales de monitoreo y analítica a través de plataformas
+          centralizadas de comunicación. Medimos, conectamos y obtenemos los
+          datos de tu operación de forma ordenada para una mejor toma de
+          decisiones. Uno de nuestros diferenciadores es que medimos a las
+          personas además de las máquinas logrando mejorar su desempeño y
+          productividad.
         </p>
       </div>
     </div>
@@ -22,9 +25,11 @@
       <div class="tuFan__info">
         <img src="../../../../assets/images/LogoTuFan.png" alt="" />
         <p>
-          Implementa soluciones de Internet de las Cosas (IoT) y analítica en
-          empresas para incrementar la eficiencia de las máquinas, personas y
-          procesos a través de herramientas de tecnologías de información.
+          Plataforma para redes Wifi que te permite proveer publicidad,
+          monetización y autenticación para redes inalámbricas públicas y
+          proveer servicios a clientes a través de wifi y dar acceso a Internet
+          de manera gratuita a los invitados del venue y proveyendo analíticos
+          para crear una gran experiencia.
         </p>
       </div>
     </div>
@@ -32,9 +37,10 @@
       <div class="tuFan__info">
         <img src="../../../../assets/images/LogoTuTech.png" alt="" />
         <p>
-          Implementa soluciones de Internet de las Cosas (IoT) y analítica en
-          empresas para incrementar la eficiencia de las máquinas, personas y
-          procesos a través de herramientas de tecnologías de información.
+          Soluciones integrales de comunicaciones e infraestructura para
+          asegurarte de tener la información dónde y cuándo la necesitas.
+          Integramos sensores para poder obtener información de tu operación en
+          tiempo real.
         </p>
       </div>
       <img
@@ -55,11 +61,11 @@ export default {};
 
 <style>
 .tuControl {
-  margin: 2rem 0;
-  max-width: 50rem;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin: 2rem 0;
+  max-width: 52rem;
 }
 
 .tuControl__container > img {
@@ -69,7 +75,7 @@ export default {};
 .tuControl__info > p,
 .tuFan__info > p {
   font-size: var(--step--1);
-  letter-spacing: 0.1em;
+  letter-spacing: 0.07rem;
   padding: 1rem;
 }
 .tuFan {
@@ -110,8 +116,8 @@ export default {};
 .tuControl > a {
   align-items: center;
   background: var(--blue);
-  border: none;
   border-radius: 5px;
+  border: none;
   color: #fff;
   cursor: pointer;
   display: flex;
@@ -128,6 +134,7 @@ export default {};
   .tuFan > img {
     opacity: 1;
     position: relative;
+    width: 15rem;
   }
 }
 @media screen and (min-width: 43.75rem) {

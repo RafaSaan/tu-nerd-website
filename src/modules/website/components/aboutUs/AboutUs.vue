@@ -1,7 +1,7 @@
 <template>
   <section class="aboutUs" id="aboutUs">
     <h2>¿Qué es lo que hacemos?</h2>
-    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+    <h5>En Tu Nerd, creamos soluciones de tecnología para las empresas.</h5>
     <div class="aboutUs__cards">
       <div class="card">
         <img
@@ -9,8 +9,12 @@
           alt="ilustacion objetivo"
         />
         <div class="card__info">
-          <h3>Lorem</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>Propósito</h3>
+          <p>
+            Tu NERD es una empresa dedicada a habilitar soluciones que faciliten
+            la operación diaria de las personas, nuestras soluciones incluyen
+            internet de las cosas, sistemas administrados y tecnología.
+          </p>
         </div>
       </div>
       <div class="card">
@@ -19,8 +23,12 @@
           alt="ilustacion objetivo"
         />
         <div class="card__info">
-          <h3>Lorem</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>Soluciones a la medida</h3>
+          <p>
+            Porque cada empresa es única y cada reto es diferente, la
+            flexibilidad de nuestros productos permiten conectarse con los
+            objetivos de la empresa.
+          </p>
         </div>
       </div>
       <div class="card">
@@ -29,8 +37,12 @@
           alt="ilustacion objetivo"
         />
         <div class="card__info">
-          <h3>Lorem</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>Resolución</h3>
+          <p>
+            Como resultado tenemos un producto con una ventaja competitiva, que
+            amplificara sus resultados, optimizaran sus costos y alcanzarán el
+            éxito de sus proyectos con mayor facilidad.
+          </p>
         </div>
       </div>
     </div>
@@ -65,17 +77,22 @@ export default {};
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
+  margin-top: 2rem;
 }
 .card {
   align-items: center;
   display: flex;
   flex-direction: column;
+  margin-bottom: 4rem;
   max-width: 18.125rem;
 }
 .card__info {
   align-items: center;
   display: flex;
   flex-direction: column;
+}
+.card__info > h3 {
+  margin: 1rem;
 }
 .card__info > p {
   text-align: center;
